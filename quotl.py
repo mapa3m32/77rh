@@ -43,6 +43,7 @@ def get_message_text(message: Message, reply: bool = False):
 
 @loader.tds
 class ShitQuotesMod(loader.Module):
+    strings = {"name": "Квоты хуеты",
     async def client_ready(self, client: telethon.TelegramClient, db: dict):
         self.client = client
         self.db = db
