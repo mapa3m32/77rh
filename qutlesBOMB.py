@@ -1,6 +1,7 @@
 import io
 import json
 import base64
+import aiohttp
 import requests
 import telethon
 from telethon.tl import types
