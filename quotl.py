@@ -206,6 +206,8 @@ class ShitQuotesMod(loader.Module):
         quote = io.BytesIO(r.content)
         quote.name = 'SQuote.webp'
 
+        await message.reply(file=quote)
+
     async def fakequote_parse_messages(self, args: str, reply: Message):
         async def get_user(args: str):
             args_, text = args.split(), ''
