@@ -3,6 +3,7 @@ import base64
 import aiohttp
 import telethon
 from telethon.tl.patched import Message
+from telethon.tl import types
 from typing import List, Union
 from time import gmtime, strftime
 from .. import loader, utils
