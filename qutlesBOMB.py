@@ -1,9 +1,10 @@
+import io
 import json
 import base64
-import aiohttp
+import requests
 import telethon
-from telethon.tl.patched import Message
 from telethon.tl import types
+from telethon.tl.patched import Message
 from typing import List, Union
 from time import gmtime, strftime
 from .. import loader, utils
