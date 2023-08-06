@@ -26,7 +26,7 @@ class GPTMod(loader.Module):
     """Гпт нах"""
 
     @loader.owner
-    async def gptscmd(self, message):
+    async def gptcmd(self, message):
         question = message.raw_text[5:].strip()
 
         await message.edit(f"❄️Запрос: {question}")
@@ -60,7 +60,7 @@ class GPTMod(loader.Module):
             logging.error(f"OpenAI API Error: {e}")
             await message.respond("❌ Произошла ошибка при обращении к OpenAI API. Попробуйте еще раз позже.")
           
-    async def genscmd(self, message):
+    async def gencmd(self, message):
         command = message.raw_text[5:].strip()
         command_parts = shlex.split(command)
         
